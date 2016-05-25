@@ -27,7 +27,7 @@ var req = http.request(options, function (res) {
       "method": "POST",
       "hostname": "api.sendgrid.com",
       "port": null,
-      "path": "/v3/contactdb/lists/348282/recipients/" + contactID,
+      "path": "/v3/contactdb/lists/{LIST ID}/recipients/" + contactID,
       "headers": {
         "authorization": "Bearer " + process.env.API_KEY,
         "cache-control": "no-cache",
